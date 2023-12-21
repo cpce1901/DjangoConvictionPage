@@ -1,0 +1,202 @@
+<!-- Hereda de plantilla principal -->
+{% extends 'public/base/base.html' %}
+
+<!-- Carga archivos estaticos -->
+{% load static %}
+
+<!-- SEO META -->
+{% block meta %}
+<meta name="description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+<meta name="keywords"
+    content="Servicios electricos, Mantenimiento Transformadores, Mantenimiento Generadores, Instalaciones electricas industriales, Electricidad en mineria">
+
+<meta property="og:title" content="Conviction IC | Servicios electricos">
+<meta property="og:image" content="{{ request.build_absolute_uri }}media/public/logo/logo.png">
+<meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta property="og:site_name" content="Conviction IC">
+<meta property="og:description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="convictionic.cl">
+<meta property="twitter:url" content="{{ request.build_absolute_uri }}">
+<meta name="twitter:title" content="Conviction IC | Servicios electricos">
+<meta name="twitter:description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+<meta name="twitter:image" content="{{ request.build_absolute_uri }}media/public/logo/logo.png">
+{% endblock meta %}
+
+<!-- Titulo de pagina -->
+{% block title %}
+<title>Servicios electricos | Inicio | Conviction IC</title>
+{% endblock title %}
+
+<!-- Contenido de pagina -->
+{% block content %}
+
+<!-- Header -->
+{% include 'public/base/header.html' %}
+
+<main>
+    <!-- Seccion principal -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full h-auto overflow-hidden relative">
+            <div class="absolute inset-0 bg-main w-full h-full bg-cover bg-no-repeat bg-bottom bg-fixed animated-zoom">
+            </div>
+            <div class="absolute inset-0 bg-slate-800 bg-opacity-90"></div>
+            <div class="flex flex-col md:items-center relative gap-10">
+                <div class="container w-auto mx-1 mt-28 p-1 flex flex-col gap-5">
+                    <h1 class="text-5xl font-rale font-bold text-white md:text-center">Conviction</h1>
+                    <h2 class="text-5xl font-rale font-bold text-white md:text-center">Ingeniería eléctrica</h2>
+                </div>
+
+                <div class="container w-auto mx-1 p-1 flex flex-col">
+                    <h3 class="font-rale font-medium text-white md:text-center md:text-xl md:font-light">En Santiago y todo Chile.</h3>
+                    <h3 class="font-rale font-medium text-white md:text-center md:text-xl md:font-light">Soluciones de calidad a tu alcance.</h3>
+                </div>
+
+                <div class="container w-auto mx-1 p-1 flex flex-col">
+                    <h4 class="font-rale font-medium text-white md:text-center md:text-xl md:font-light">Electricidad potencia y control.</h4>
+                    <h4 class="font-rale font-medium text-white md:text-center md:text-xl md:font-light">Sistemas de monitóreo y gestión.</h4>
+                    <h4 class="font-rale font-medium text-white md:text-center md:text-xl md:font-light">Mantenimiento de Transformadores de
+                        potencia.</h4>
+                </div>
+
+                <div class="self-center bg-white w-72 mb-12">
+                    <img src="{% static 'img/logo.png' %}" alt="Logo Conviction">
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Seccion Services -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full overflow-hidden bg-gray-50">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:my-6">
+
+                <div class="flex flex-col gap-5 justify-center items-center ">
+
+                    <div class="w-32 h-32 mb-5 bg-white rounded-full flex justify-center items-center shadow-lg">
+                        <img src="{% static 'img/icons/TrafoIcon.png' %}" alt="Icono transformador elctrico"
+                            class="w-20 h-20">
+                    </div>
+
+                    <h5 class="font-exo text-3xl text-center">Ingeniería Electrica</h5>
+
+                    <p class="font-rale text-xl text-center p-5">Servicios a transformadores y generadores eléctricos
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-5 justify-center items-center ">
+
+                    <div class="w-32 h-32 mb-5 bg-white rounded-full flex justify-center items-center shadow-lg">
+                        <img src="{% static 'img/icons/TorreAT.png' %}" alt="Icono torre AT" class="w-20 h-20">
+                    </div>
+
+                    <h5 class="font-exo text-3xl text-center">Electricidad Industrial</h5>
+
+                    <p class="font-rale text-xl text-center p-5">Soluciones en control y Potencia eléctrica</p>
+                </div>
+
+                <div class="flex flex-col gap-5 justify-center items-center ">
+
+                    <div class="w-32 h-32 mb-5 bg-white rounded-full flex justify-center items-center shadow-lg">
+                        <img src="{% static 'img/icons/Telemetria.png' %}" alt="Icono telemetria" class="w-20 h-20">
+                    </div>
+
+                    <h5 class="font-exo text-3xl text-center">Telemetría - SCADA</h5>
+
+                    <p class="font-rale text-xl text-center p-5">Sistemas de comunicación y accionamiento remoto.</p>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- Seccion about -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full overflow-hidden">
+            <div class="flex flex-col justify-center items-center">
+
+                <div class="bg-main2 w-full h-[25vh] md:h-[70vh] lg:h-[50vh] bg-cover bg-no-repeat bg-center bg-fixed">
+                </div>
+
+                <div class="flex flex-col justify-center items-center p-5 xl:px-96 gap-5 xl:py-10">
+
+                    <h5 class="font-exo text-3xl mb-5">Nosotros</h5>
+
+                    <p class="font-rale text-gray-500 text-justify leading-relaxed xl:text-xl">Convicition IC SpA. Es fundada a
+                        mediados del
+                        2021, en plena contingencia por el
+                        virus SARS-CoV-2.
+                    </p>
+                    <p class="font-rale text-gray-500 text-justify leading-relaxed xl:text-xl">
+                        Somos una empresa innovadora especializada en ofrecer servicios integrales de
+                        mantenimiento eléctrico, montajes industriales e ingeniería eléctrica. Nos
+                        destacamos por nuestra dedicación a proporcionar soluciones eléctricas eficientes y
+                        seguras para nuestros clientes en diversos sectores industriales. Con un equipo
+                        altamente capacitado y comprometido, nos esforzamos por asegurar la excelencia
+                        técnica y la satisfacción del cliente en cada proyecto que emprendemos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seccion Clients -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full overflow-hidden">
+            <div class="flex flex-col justify-around items-center gap-5">
+                <p class="font-exo text-3xl px-10 text-center">Clientes que han confiado en nosotros</p>
+                <div class="flex flex-col md:flex-row md:flex-wrap justify-around items-center gap-5">
+                    <img src="{% static 'img/clients/Agunsa.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/Famae.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/Icetel.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/Irritec.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/Kbd.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/Mavesa.png' %}" alt="Agunsa">
+                    <img src="{% static 'img/clients/SCollege.png' %}" alt="Agunsa">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Seccion Partners -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full overflow-hidden">
+            <div class="flex flex-col justify-center items-center">
+                <p class="font-exo text-3xl px-10 text-center mb-10">Partners</p>
+                <a href="https://www.electricidadrcd.cl/" class="flex flex-col justify-center items-center gap-5">
+                    <img src="{% static 'img/partners/LogoRCDwb.png' %}" alt="Electricidad RCD" class="w-40">
+                    <p class="font-rale text-sky-600">www.electricidadrcd.cl</p>
+                </a>
+                <hr class="w-28 h-[1px] mt-10 bg-gray-300 border-0 rounded ">
+            </div>
+        </section>
+    </div>
+
+    <!-- Seccion Simple Contact -->
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full">
+            <div class="flex flex-col justify-center items-center gap-10">
+                <p class="font-rale text-gray-500 text-justify leading-relaxed p-5 xl:text-xl">Si requieres soluciones y un grupo
+                    de
+                    profesionales de calidad, no dudes en hacernos legar tus
+                    requerimientos.</p>
+                <a href="{% url 'contact_app:contact' %}"
+                    class="px-10 py-4 text-lg outline outline-1 outline-sky-700 text-gray-600 font-rale hover:outline-gray-600 hover:bg-gray-50 hover:text-black transition-all duration-300">¡Contáctenos!</a>
+
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<!-- Footer -->
+{% include 'public/base/footer.html' %}
+
+{% endblock content %}

@@ -1,0 +1,61 @@
+<!-- Hereda de plantilla principal -->
+{% extends 'public/base/base.html' %}
+
+<!-- Carga static -->
+{% load static %}
+
+<!-- Keywords para buscadores -->
+{% block tags %}
+<meta name="keywords" content="Electricista, Electricista a domicilio, Electricidad">
+{% endblock tags %}
+
+<!-- Descripcion para buscadores -->
+{% block description %}
+<meta name="description" content="Servicios electricos para Empresas - Oficinas - Personas. 
+Electricista a domicilio para asistencia técnica en terreno, reparaciones de cortes electricos,
+instalaciones y matenimiento electrico">
+{% endblock description %}
+
+<!-- Titulo de pagina -->
+{% block title %}
+<title>404 - No Encontrado - Conviction IC</title>
+{% endblock title %}
+
+
+{% block content %}
+
+<main>
+    <!-- Seccion principal -->
+    <div class="container-fluid mx-auto p-1">
+        <section class="w-full h-screen overflow-hidden relative">
+            <div class="absolute inset-0 bg-main w-full h-full bg-cover bg-no-repeat bg-bottom bg-fixed animated-zoom">
+            </div>
+            <div class="absolute inset-0 bg-slate-800 bg-opacity-90"></div>
+
+            <div class="w-full h-full flex flex-col justify-center items-center relative gap-10">
+
+                <p class=" font-exo text-white text-6xl">Lo siento, no estas autorizado....</p>
+                <h1 class="font-rale text-white text-9xl">403</h1>
+                <p class="font-exo text-white text-4xl">"Conviction IC spa"</p>
+                <p class="font-rale text-white text-2xl">"Soluciones y confianza"</p>
+                <p class="font-rale text-white text-2xl">Informaciones y Emergencias</p>
+
+                <p class="font-rale text-white text-2xl">Fono: +56 9 74699573</p>
+
+                <p class="font-rale text-white text-2xl">Servicios de electricidad e ingeniería eléctrica</p>
+                <a href="{% url 'public_app:home' %}" title="Volver a electricista a domicilio"
+                    class=" px-10 py-4 text-lg outline outline-1 outline-gray-100 text-gray-100 font-rale hover:outline-gray-600 hover:bg-gray-50 hover:text-black transition-all duration-300">Volver</a>
+                Volver</a>
+            </div>
+
+
+            <div class="self-center bg-white w-72 mb-12">
+                <img src="{% static 'img/logo.png' %}" alt="Logo Conviction">
+            </div>
+        </section>
+    </div>
+</main>
+
+
+
+{% endblock content %}
