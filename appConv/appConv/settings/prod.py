@@ -2,7 +2,7 @@ from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['167.172.170.1', 'conviction.cl', 'www.conviction.cl']
+ALLOWED_HOSTS = ['146.190.121.6', 'convictionic.cl', 'www.convictionic.cl']
 
 DATABASES = {
     "default": {
