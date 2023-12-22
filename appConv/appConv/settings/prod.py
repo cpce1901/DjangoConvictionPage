@@ -34,8 +34,10 @@ STATIC_ROOT = BASE_DIR / 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
-RECAPTCHA_PUBLIC_KEY = "6LeQAy0pAAAAADrKe9cNNLEo_r4G6Ppv2OtbVCBU"
-RECAPTCHA_PRIVATE_KEY = "6LeQAy0pAAAAAHP4TdTmWuaCwuUmQ_ClrPdoJnyN"
+# Llave sitio
+RECAPTCHA_PUBLIC_KEY = "6LfctzkpAAAAAHMylvs6cCG0m96sOdvVQQvT1Epa"
+# Llave secreta
+RECAPTCHA_PRIVATE_KEY = "6LfctzkpAAAAAG33fOS0vYOuVRvEU6j9SNWHoblY"
 
 RECAPTCHA_ERROR_MSG = {
     "required": "Porfavor completa la verificación...",
