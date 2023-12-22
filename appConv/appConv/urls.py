@@ -31,6 +31,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("apps.public.urls")),
     path("", include("apps.contact.urls")),
+    path("", include("apps.utills.urls")),
     # Routers
     path("", include("apps.contact.routers")),
     # Bots.txt
