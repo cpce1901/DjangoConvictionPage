@@ -17,7 +17,7 @@ def robots_txt(request):
         "",
         "Disallow: /admin/",
         "",
-        "Sitemap: https://www.electricidadrcd.cl/sitemap.xml"
+        "Sitemap: https://www.convictionic.cl/sitemap.xml"
         
         
     ]
