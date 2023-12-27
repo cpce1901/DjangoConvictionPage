@@ -75,4 +75,3 @@ class Contact(FormView):
                 print("No se ha enviado la notificación")
 
             return redirect(reverse("contact_app:contact") + "?ok")
-

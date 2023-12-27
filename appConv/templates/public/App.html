@@ -1,0 +1,50 @@
+<!-- Hereda de plantilla principal -->
+{% extends 'public/base/base.html' %}
+
+<!-- Carga archivos estaticos -->
+{% load static %}
+
+<!-- SEO META -->
+{% block meta %}
+<meta name="description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+<meta name="keywords"
+    content="Servicios electricos, Mantenimiento Transformadores, Mantenimiento Generadores, Instalaciones electricas industriales, Electricidad en mineria">
+
+<meta property="og:title" content="Conviction IC | LoginApp | Servicios electricos">
+<meta property="og:image" content="{{ request.build_absolute_uri }}media/public/logo/logo.png">
+<meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta property="og:site_name" content="Conviction IC">
+<meta property="og:description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="convictionic.cl">
+<meta property="twitter:url" content="{{ request.build_absolute_uri }}">
+<meta name="twitter:title" content="Conviction IC | LoginApp | Servicios electricos">
+<meta name="twitter:description"
+    content="Servicios electricos, soluciones de ingeniería electrica, control y potencia industrial. Disponibles 24 hrs. en toda la Región Metropolitana y Chile.">
+<meta name="twitter:image" content="{{ request.build_absolute_uri }}media/public/logo/logo.png">
+{% endblock meta %}
+
+<!-- Titulo de pagina -->
+{% block title %}
+<title>Servicios electricos | LoginApp | Conviction IC</title>
+{% endblock title %}
+
+<!-- Contenido de pagina -->
+{% block content %}
+
+<!-- Header -->
+{% include 'public/base/header.html' %}
+
+<main>
+    <!-- Seccion principal Login App -->
+    Login
+
+</main>
+
+<!-- Footer -->
+{% include 'public/base/footer.html' %}
+
+{% endblock content %}
