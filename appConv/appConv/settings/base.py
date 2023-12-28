@@ -27,6 +27,7 @@ LOCAL_APPS = [
     "apps.public",
     "apps.contact",
     "apps.utills",
+    "apps.myApp",
 ]
 
 THIRD_APPS = [

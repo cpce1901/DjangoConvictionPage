@@ -35,6 +35,7 @@ urlpatterns = [
     path("", include("apps.public.urls")),
     path("", include("apps.contact.urls")),
     path("", include("apps.utills.urls")),
+    path("", include("apps.myApp.urls")),
     # Routers
     path("", include("apps.contact.routers")),
     # Bots.txt

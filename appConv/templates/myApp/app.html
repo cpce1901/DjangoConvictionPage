@@ -40,11 +40,41 @@
 
 <main>
     <!-- Seccion principal Login App -->
-    Login
 
+    <div class="container-fluid mx-auto p-1 mb-12">
+        <section class="w-full h-screen overflow-hidden relative md:mt-23 md:h-auto">
+
+            <div class="w-full h-full flex flex-col justify-center items-center">
+
+                <div class="flex flex-col justify-center items-center mb-20 md:mb-10 mt-28">
+                    <img src="{% static 'img/logo.png' %}" alt="Logo Conviction IC" class="md:w-1/2">
+                    <p class="font-rale text-lg text-gray-500">Tecnología e ingeniería a tu servicio</p>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+
+                    <div class="flex flex-col gap-1 mb-12">
+                        <label class="font-exo text-base font-semibold text-gray-500">{{ form.name.label }}</label>
+                        {{ form.client }}
+                    </div>
+
+                    <div class="flex flex-col gap-1 mt-4 items-center md:items-start mb-12">
+                        {{ form.recaptcha }}
+                        <small class="text-base font-semibold text-red-600">{{ form.recaptcha.errors }}</small>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center gap-1 mb-12">
+                        <input type="submit" value="Ir a App"
+                            class="w-1/2 mt-5 px-10 py-4 md:px-4 md:py-2 text-lg outline outline-1 outline-gray-400 text-gray-600 font-rale hover:outline-gray-600 hover:bg-sky-800 hover:text-white transition-all duration-300">
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </div>
 </main>
 
-<!-- Footer -->
-{% include 'public/base/footer.html' %}
 
 {% endblock content %}
